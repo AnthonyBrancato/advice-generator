@@ -1,8 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-// import { queryClient } from '../..';
 
-interface AdviceSlipQueryData {
+export interface AdviceSlipQueryData {
   slip: {
     id: number;
     advice: string;
@@ -16,7 +15,7 @@ const fetchAdviceSlip = async (): Promise<AdviceSlipQueryData> => {
   return response.data;
 };
 
-export const useRandomAdviceSlip = () => {
+export const useRandomAdviceSlipQuery = () => {
   const query = useQuery([QUERY_ID], fetchAdviceSlip, {
     enabled: false,
   });
