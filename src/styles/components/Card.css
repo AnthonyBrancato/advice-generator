@@ -1,0 +1,54 @@
+.flash-c-card {
+    background-color: var(--primary-blue--400) !important;
+    width: 343px;
+    min-height: auto;
+    position: relative;
+    border-radius: 10px !important;
+}
+
+.flash-c-card.MuiPaper-root.MuiCard-root {
+    overflow: visible !important;
+}
+
+.flash-typo-normal {
+    font-size: 11px !important;
+    font-family: 'Manrope', sans-serif !important;
+    text-transform: uppercase;
+}
+
+.flash-c-card__icon-divider {
+    width: 20px !important;
+    height: 16px !important;
+    color: var(--primary-blue--200) !important;
+}
+
+.flash-c-card__action {
+    position: absolute;
+    top: 90%;
+    z-index: 900;
+}
+
+.flash-c-card__typo--advice {
+    color: var(--primary-blue--200);
+    font-size: 24px !important;
+    text-align: center;
+    font-family: 'Manrope', sans-serif !important;
+    line-height: 2.5rem !important;
+    letter-spacing: 0.26px;
+    margin-top: 24px !important;
+}
+
+
+@media (min-width: 375px) {
+    .flash-c-card {
+        width: 540px;
+        height: 332px;
+        padding: 48px;
+        padding-top: 10px;
+    }
+
+    .flash-c-card__typo--advice {
+        font-size: 20px !important;
+    }
+    
+}

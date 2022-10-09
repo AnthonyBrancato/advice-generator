@@ -1,0 +1,10 @@
+.flash-c-btn.MuiIconButton-root {
+    background-color: var(--primary-green) !important;
+    color: var(--primary-blue);
+}
+
+
+.flash-c-btn.MuiIconButton-root:hover {
+    box-shadow: var(--primary-green) 0px 0px 29px 0px;
+    transition: all 0.3s ease-in-out;
+}
