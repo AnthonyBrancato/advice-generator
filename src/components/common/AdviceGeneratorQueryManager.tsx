@@ -42,7 +42,5 @@ export function AdviceGeneratorViewQueryManager({
 }
 
 export const useAdviceGeneratorViewQueryManager = () => {
-  return React.useContext<AdviceGeneratorViewContextProps>(
-    AdviceGeneratorViewContext
-  );
+  return React.useContext(AdviceGeneratorViewContext);
 };

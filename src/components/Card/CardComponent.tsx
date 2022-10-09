@@ -1,4 +1,4 @@
-import { Card, Divider, Skeleton } from '@mui/material';
+import { Card, Divider } from '@mui/material';
 import CasinoRoundedIcon from '@mui/icons-material/CasinoRounded';
 import PauseIcon from '@mui/icons-material/Pause';
 
@@ -13,7 +13,7 @@ import { useAdviceGeneratorViewQueryManager } from '../common/AdviceGeneratorQue
 import { CardActionsComponent } from './CardActionsComponent';
 
 export function CardComponent() {
-  const { data, refetch, isLoading } = useAdviceGeneratorViewQueryManager();
+  const { data, refetch } = useAdviceGeneratorViewQueryManager();
 
   const handleFetchAdviceSlip = React.useCallback(() => {
     refetch();
@@ -28,14 +28,7 @@ export function CardComponent() {
 
   return (
     <Card sx={{ minWidth: 275 }} className="flash-c-card">
-      {isLoading ? (
-        <Skeleton variant="rectangular" style={{ marginTop: '20px' }} />
-      ) : (
-        <CardContentComponent
-          slipId={data?.slip?.id}
-          advice={data?.slip?.advice}
-        />
-      )}
+      <CardContentComponent data={data} />
       <Divider
         className="flash-c-card__divider"
         variant="inset"
