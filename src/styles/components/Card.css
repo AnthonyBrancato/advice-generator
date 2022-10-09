@@ -1,6 +1,7 @@
 .flash-c-card {
     background-color: var(--primary-blue--400) !important;
     width: 343px;
+    min-height: 200px;
     position: relative;
     border-radius: 10px !important;
 }
@@ -19,12 +20,6 @@
     width: 20px !important;
     height: 16px !important;
     color: var(--primary-blue--200) !important;
-}
-
-.flash-c-card__action {
-    position: absolute;
-    top: 90%;
-    z-index: 900;
 }
 
 .flash-c-card__typo--advice {
@@ -47,6 +42,10 @@
 
     .flash-c-card__typo--advice {
         font-size: 20px !important;
+    }
+
+    .flash-typo-normal {
+        font-size: 14px !important;
     }
     
 }

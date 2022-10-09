@@ -1,0 +1,5 @@
+.flash-c-card__action {
+    position: absolute;
+    top: 85%;
+    z-index: 900;
+}
